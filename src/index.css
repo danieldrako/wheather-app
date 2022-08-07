@@ -1,0 +1,108 @@
+
+ html {
+  box-sizing: border-box;
+  margin:0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+ }
+ *, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+}
+
+
+ .App {
+  /* background-color: rgb(242, 0, 255); */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ /*  justify-content: center; */
+  align-items: center;
+ }
+ .bg {
+  background-image: url('src/assets/rain.gif');
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+ }
+h1, h2{
+  margin: 0;
+}
+ .card{
+  margin: 0 50px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  background-color: rgba(222, 229, 235, 0.759);
+  margin: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  width: 36rem;
+  
+ }
+ .data {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0;
+ }
+
+ ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+ }
+
+ li {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+ }
+ .temp {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+ }
+
+ button{
+  background-color: rgba(240, 248, 255, 0.866);
+  border: 0;
+  width: 5rem;
+  aspect-ratio: 1;
+  font-size:  1.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(82, 89, 41, 0.589);
+
+ }
+ button:hover {
+  box-shadow: 0 0 10px rgba(48, 118, 168, 0.589);
+  transition: box-shadow 200ms ease;
+  -webkit-transition: box-shadow 200ms ease;
+  -moz-transition: box-shadow 200ms ease;
+  -ms-transition: box-shadow 200ms ease;
+  -o-transition: box-shadow 200ms ease;
+
+ }
+
+
