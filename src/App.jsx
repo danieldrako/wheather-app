@@ -28,8 +28,20 @@ console.log(type);
 
   return (
     <div className="App">
-      <h1>the time is {type}</h1>
-      <CardWeather lon={coords?.lon} lat = {coords?.lat} setType= {setType}/>
+
+      <div className='main'>
+
+        <video src="src/assets/video/rain.mp4" autoPlay loop muted ></video>
+        <div className='content'>
+          <h1>the time is {type}</h1>
+          <CardWeather 
+            lon={coords?.lon} 
+            lat = {coords?.lat}   
+            setType= {setType}/>
+        </div>
+
+      </div>
+
     </div>
   )
 }
