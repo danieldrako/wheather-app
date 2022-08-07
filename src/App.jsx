@@ -23,17 +23,32 @@ function App() {
     navigator.geolocation.getCurrentPosition(success)
   
   }, [])
-
-console.log(type);
-
+let video
+console.log(typeof(type));
+if(type == "Clouds"){
+  video = type
+}else if (type == "Rain"){
+  video = type
+}else if (type == "Snow"){
+  video = type
+}else if (type == "Drizzle"){
+  video = type
+}else if (type == "Mist"){
+  video = type
+}else if (type == "Thunderstorm"){
+  video = type
+}else {
+  video = 'Random'
+}
+console.log(video)
   return (
     <div className="App">
 
       <div className='main'>
 
-        <video src={`src/assets/video/${type}.mp4`} autoPlay loop muted ></video>
+        <video src={`src/assets/video/${video}.mp4`} autoPlay loop muted ></video>
         <div className='content'>
-          <h1>the time is {type}</h1>
+
           <CardWeather 
             lon={coords?.lon} 
             lat = {coords?.lat}   
