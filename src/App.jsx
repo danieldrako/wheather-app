@@ -25,7 +25,7 @@ function App() {
   }, [])
 let video
 console.log(typeof(type));
-if(type == "Clouds"){
+ if(type == "Clouds"){
   video = type
 }else if (type == "Rain"){
   video = type
