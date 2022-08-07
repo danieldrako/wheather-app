@@ -31,7 +31,7 @@ console.log(type);
 
       <div className='main'>
 
-        <video src="src/assets/video/rain.mp4" autoPlay loop muted ></video>
+        <video src={`src/assets/video/${type}.mp4`} autoPlay loop muted ></video>
         <div className='content'>
           <h1>the time is {type}</h1>
           <CardWeather 
